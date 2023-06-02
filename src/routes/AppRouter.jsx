@@ -8,7 +8,7 @@ let routes = [
   {
     path: PATHS.HOME,
     element: <Home />,
-    isPrivate: true,
+    
   },
   {
     path: PATHS.ROOT,
