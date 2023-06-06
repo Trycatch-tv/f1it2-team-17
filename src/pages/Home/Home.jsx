@@ -35,6 +35,7 @@ const Home = () => {
                   <CardContainer
                     title={art.title}
                     description={art.description}
+                    {...art}
                   />
                 </Col>
               ))}

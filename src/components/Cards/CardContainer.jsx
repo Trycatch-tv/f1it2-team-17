@@ -3,8 +3,10 @@ import Card from "react-bootstrap/Card";
 import "./CardContainer.css";
 import PropTypes from "prop-types";
 import { Col } from "react-bootstrap";
+import { useNavigate } from "react-router";
 
-const CardContainer = ({ title, description }) => {
+const CardContainer = ({ title, description, ...art }) => {
+  const navigate = useNavigate();
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Img
@@ -15,7 +17,13 @@ const CardContainer = ({ title, description }) => {
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
         <Col>
-          <Button variant="primary">Ver Detalles</Button>
+          <Button
+            variant="primary "
+            onClick={() => navigate(`/gallery-info/${art.id}`)}
+          >
+            {" "}
+            Ver Detalles
+          </Button>
           <Button variant="outline-primary">Editar</Button>
         </Col>
       </Card.Body>
