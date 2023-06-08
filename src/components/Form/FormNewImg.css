@@ -1,0 +1,21 @@
+.button-return{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+      
+}
+
+.alert-danger{
+   display: flex;
+   justify-content: center;
+}
+
+.container-button-send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
