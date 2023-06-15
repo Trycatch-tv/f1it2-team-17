@@ -90,6 +90,9 @@ const Detail = () => {
                   190 x 190 cm
                 </p>
                 <Button variant="primary">Comprar </Button>
+                <Button variant="success" style={{
+                  marginLeft: "10px"
+                }}>Editar</Button>
 
               </div>
             </div>
